@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9E3CE99B571F2B53CED3068FD0A6B2EFE3397EA9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "99287039DBED71466003E5FB5E4DD721AAB642D8" : 0,
+    "9E3CE99B571F2B53CED3068FD0A6B2EFE3397EA9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ED3F408E-8165-4BFC-803D-29E7AFDBC3D5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "99287039DBED71466003E5FB5E4DD721AAB642D8" : "..\/Android\/nipponcolors",
+    "9E3CE99B571F2B53CED3068FD0A6B2EFE3397EA9" : "NipponColors\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NipponColors",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NipponColors.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:gjiazhe\/NipponColors.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "99287039DBED71466003E5FB5E4DD721AAB642D8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:gjiazhe\/NipponColorsForIOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9E3CE99B571F2B53CED3068FD0A6B2EFE3397EA9"
+    }
+  ]
+}

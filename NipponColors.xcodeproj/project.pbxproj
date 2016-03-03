@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4379B9B21C82DE230071792D /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379B9B11C82DE230071792D /* ColorCell.swift */; };
+		4379B9B51C82EFFC0071792D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379B9B41C82EFFC0071792D /* Color.swift */; };
+		4379B9B71C8466920071792D /* ColorsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4379B9B61C8466920071792D /* ColorsData.json */; };
 		43CA584B1C81F9ED00304800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CA584A1C81F9ED00304800 /* AppDelegate.swift */; };
 		43CA584D1C81F9ED00304800 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CA584C1C81F9ED00304800 /* ViewController.swift */; };
 		43CA58501C81F9ED00304800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CA584E1C81F9ED00304800 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4379B9B11C82DE230071792D /* ColorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
+		4379B9B41C82EFFC0071792D /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4379B9B61C8466920071792D /* ColorsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ColorsData.json; path = ../../../Android/nipponcolors/app/src/main/assets/ColorsData.json; sourceTree = "<group>"; };
 		43CA58471C81F9ED00304800 /* NipponColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NipponColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CA584A1C81F9ED00304800 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43CA584C1C81F9ED00304800 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +41,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43634C881C888E5900C3E88A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				43CA584C1C81F9ED00304800 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4379B9B01C82DCF70071792D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4379B9B11C82DE230071792D /* ColorCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4379B9B31C82EFDF0071792D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4379B9B41C82EFFC0071792D /* Color.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		43CA583E1C81F9ED00304800 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +84,15 @@
 		43CA58491C81F9ED00304800 /* NipponColors */ = {
 			isa = PBXGroup;
 			children = (
-				43CA584A1C81F9ED00304800 /* AppDelegate.swift */,
-				43CA584C1C81F9ED00304800 /* ViewController.swift */,
-				43CA584E1C81F9ED00304800 /* Main.storyboard */,
-				43CA58511C81F9ED00304800 /* Assets.xcassets */,
 				43CA58531C81F9ED00304800 /* LaunchScreen.storyboard */,
+				43CA584E1C81F9ED00304800 /* Main.storyboard */,
+				43CA584A1C81F9ED00304800 /* AppDelegate.swift */,
+				4379B9B31C82EFDF0071792D /* Models */,
+				4379B9B01C82DCF70071792D /* Views */,
+				43634C881C888E5900C3E88A /* ViewControllers */,
+				43CA58511C81F9ED00304800 /* Assets.xcassets */,
 				43CA58561C81F9ED00304800 /* Info.plist */,
+				4379B9B61C8466920071792D /* ColorsData.json */,
 			);
 			path = NipponColors;
 			sourceTree = "<group>";
@@ -126,6 +159,7 @@
 				43CA58551C81F9ED00304800 /* LaunchScreen.storyboard in Resources */,
 				43CA58521C81F9ED00304800 /* Assets.xcassets in Resources */,
 				43CA58501C81F9ED00304800 /* Main.storyboard in Resources */,
+				4379B9B71C8466920071792D /* ColorsData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				43CA584D1C81F9ED00304800 /* ViewController.swift in Sources */,
+				4379B9B51C82EFFC0071792D /* Color.swift in Sources */,
 				43CA584B1C81F9ED00304800 /* AppDelegate.swift in Sources */,
+				4379B9B21C82DE230071792D /* ColorCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NipponColors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gjiazhe.NipponColors;
@@ -259,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NipponColors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gjiazhe.NipponColors;
@@ -285,6 +323,7 @@
 				43CA585B1C81F9ED00304800 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

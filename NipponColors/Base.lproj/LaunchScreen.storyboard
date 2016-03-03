@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +18,48 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="overlay" translatesAutoresizingMaskIntoConstraints="NO" id="qd3-zg-rt9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nippon Colors" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAp-jO-8Rz">
+                                <rect key="frame" x="235" y="277" width="129.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日本の伝統色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2t-a5-pZj">
+                                <rect key="frame" x="192" y="300" width="216" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="inspred by nipponcolors.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9W-uZ-nZT">
+                                <rect key="frame" x="410" y="564" width="170" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="SYH-PY-Ctw">
+                                <rect key="frame" x="263" y="173" width="74" height="74"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82352941180000006" green="0.5450980392" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qd3-zg-rt9" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="2vb-Oo-CaR"/>
+                            <constraint firstItem="UAp-jO-8Rz" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="31t-VA-Na4"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="f9W-uZ-nZT" secondAttribute="bottom" constant="20" id="CDl-9z-jt5"/>
+                            <constraint firstItem="qd3-zg-rt9" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="EWz-Yl-8tq"/>
+                            <constraint firstItem="b2t-a5-pZj" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="KHz-2T-brB"/>
+                            <constraint firstItem="SYH-PY-Ctw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PJ2-pM-0JD"/>
+                            <constraint firstItem="qd3-zg-rt9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="XCD-Hy-g7V"/>
+                            <constraint firstItem="qd3-zg-rt9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="c84-gM-PC2"/>
+                            <constraint firstItem="UAp-jO-8Rz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="oIs-80-V1I"/>
+                            <constraint firstItem="qd3-zg-rt9" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="r3w-Ts-vt6"/>
+                            <constraint firstItem="b2t-a5-pZj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ttW-7D-jFk"/>
+                            <constraint firstItem="UAp-jO-8Rz" firstAttribute="top" secondItem="SYH-PY-Ctw" secondAttribute="bottom" constant="30" id="uAu-mf-XDN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f9W-uZ-nZT" secondAttribute="trailing" id="zbt-aE-GR7"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +67,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="overlay" width="360" height="640"/>
+        <image name="sun" width="74" height="74"/>
+    </resources>
 </document>
