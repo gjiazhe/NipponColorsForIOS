@@ -49,7 +49,15 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let color = colors[indexPath.row]
-        view.backgroundColor = UIColor(red: CGFloat(color.getR())/255.0, green: CGFloat(color.getG())/255.0, blue: CGFloat(color.getB())/255.0, alpha: 1.0)
+        let bgColor = UIColor(red: CGFloat(color.getR())/255.0, green: CGFloat(color.getG())/255.0, blue: CGFloat(color.getB())/255.0, alpha: 1.0).CGColor
+        
+        let anim = CABasicAnimation(keyPath: "backgroundColor")
+        anim.fromValue = view.layer.backgroundColor
+        view.layer.backgroundColor = bgColor
+        anim.toValue = bgColor
+        anim.duration = 1.5
+        anim.fillMode = kCAFillModeBoth
+        view.layer.addAnimation(anim, forKey: "bgColorAnim")
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
