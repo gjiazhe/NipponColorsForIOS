@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var gLabel: AnimNumLabel!
     @IBOutlet weak var bLabel: AnimNumLabel!
     
+    @IBOutlet weak var nameLabel: NameLabel!
     
     override func loadView() {
         super.loadView()
@@ -90,6 +91,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
         bgColorAnimateTo(color)
         cmykRingsAnimTo(color)
         rgbLabelsAnimTo(color)
+        nameLabel.updateName(nameEN: color.nameEN, nameJA: color.nameJA)
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
