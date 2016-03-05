@@ -19,17 +19,24 @@ public class NameLabel: UIView {
     
     public override func drawRect(rect: CGRect) {
         drawNameJA()
+        drawNameEN()
     }
     
     func drawNameJA() {
-        updateNameJA()
         labelNameJA.textColor = UIColor(white: 1.0, alpha: 0.7)
         labelNameJA.numberOfLines = 0
+        updateNameJA()
         self.addSubview(labelNameJA)
     }
     
     func drawNameEN() {
-        
+        labelNameEN.textColor = UIColor(white: 1.0, alpha: 0.7)
+        labelNameEN.layer.bounds.size.width = self.layer.bounds.width
+        labelNameEN.adjustsFontSizeToFitWidth = true
+        labelNameEN.layer.anchorPoint = CGPoint(x: 0.5, y: 0)
+        labelNameEN.textAlignment = NSTextAlignment.Center
+        updateNameEN()
+        self.addSubview(labelNameEN)
     }
     
     func updateNameJA() {
@@ -43,13 +50,15 @@ public class NameLabel: UIView {
     }
     
     func updateNameEN() {
-        
+        labelNameEN.text = nameEN
+        labelNameEN.layer.bounds.size.height = labelNameEN.font.pointSize
+        labelNameEN.layer.position = CGPoint(x: self.layer.bounds.size.width/2, y: labelNameJA.layer.bounds.height + 8)
     }
     
     public func updateName(nameEN nameEN: String, nameJA: String) {
         self.nameEN = nameEN
         self.nameJA = nameJA
-        updateNameEN()
         updateNameJA()
+        updateNameEN()
     }
 }
