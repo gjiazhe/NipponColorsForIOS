@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		433297E11C8C34B4008BE1F6 /* ColorsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 433297E01C8C34B4008BE1F6 /* ColorsData.json */; };
 		436438761C8961FB00EA2E7F /* CmykRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436438751C8961FB00EA2E7F /* CmykRing.swift */; };
 		4379B9B21C82DE230071792D /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379B9B11C82DE230071792D /* ColorCell.swift */; };
 		4379B9B51C82EFFC0071792D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4379B9B41C82EFFC0071792D /* Color.swift */; };
-		4379B9B71C8466920071792D /* ColorsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4379B9B61C8466920071792D /* ColorsData.json */; };
 		437A75451C8AE4E2006A4367 /* AnimNumLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437A75441C8AE4E2006A4367 /* AnimNumLabel.swift */; };
 		437A75471C8B3ECE006A4367 /* NameLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437A75461C8B3ECE006A4367 /* NameLabel.swift */; };
 		43CA584B1C81F9ED00304800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CA584A1C81F9ED00304800 /* AppDelegate.swift */; };
@@ -21,10 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		433297E01C8C34B4008BE1F6 /* ColorsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ColorsData.json; sourceTree = "<group>"; };
 		436438751C8961FB00EA2E7F /* CmykRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = CmykRing.swift; sourceTree = "<group>"; };
 		4379B9B11C82DE230071792D /* ColorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
 		4379B9B41C82EFFC0071792D /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		4379B9B61C8466920071792D /* ColorsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ColorsData.json; path = ../../../Android/nipponcolors/app/src/main/assets/ColorsData.json; sourceTree = "<group>"; };
 		437A75441C8AE4E2006A4367 /* AnimNumLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimNumLabel.swift; sourceTree = "<group>"; };
 		437A75461C8B3ECE006A4367 /* NameLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameLabel.swift; sourceTree = "<group>"; };
 		43CA58471C81F9ED00304800 /* NipponColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NipponColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +101,7 @@
 				43634C881C888E5900C3E88A /* ViewControllers */,
 				43CA58511C81F9ED00304800 /* Assets.xcassets */,
 				43CA58561C81F9ED00304800 /* Info.plist */,
-				4379B9B61C8466920071792D /* ColorsData.json */,
+				433297E01C8C34B4008BE1F6 /* ColorsData.json */,
 			);
 			path = NipponColors;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 				43CA58551C81F9ED00304800 /* LaunchScreen.storyboard in Resources */,
 				43CA58521C81F9ED00304800 /* Assets.xcassets in Resources */,
 				43CA58501C81F9ED00304800 /* Main.storyboard in Resources */,
-				4379B9B71C8466920071792D /* ColorsData.json in Resources */,
+				433297E11C8C34B4008BE1F6 /* ColorsData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
