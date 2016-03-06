@@ -55,10 +55,25 @@ public class NameLabel: UIView {
         labelNameEN.layer.position = CGPoint(x: self.layer.bounds.size.width/2, y: labelNameJA.layer.bounds.height + 8)
     }
     
-    public func updateName(nameEN nameEN: String, nameJA: String) {
-        self.nameEN = nameEN
-        self.nameJA = nameJA
-        updateNameJA()
-        updateNameEN()
+    public func updateName(nameEN nameEN: String, nameJA: String, animate:Bool, withDuration duration:CFTimeInterval) {
+        if animate {
+            UIView.animateWithDuration(duration, animations: { () -> Void in
+                    self.labelNameEN.alpha = 0
+                    self.labelNameJA.alpha = 0}) {(finish) -> Void in
+                        self.nameEN = nameEN
+                        self.nameJA = nameJA
+                        self.updateNameJA()
+                        self.updateNameEN()
+                        UIView.animateWithDuration(duration, animations: { () -> Void in
+                            self.labelNameEN.alpha = 0.7
+                            self.labelNameJA.alpha = 0.7
+                        })
+            }
+        } else {
+            self.nameEN = nameEN
+            self.nameJA = nameJA
+            updateNameJA()
+            updateNameEN()
+        }
     }
 }

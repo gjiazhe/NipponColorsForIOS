@@ -48,6 +48,13 @@ class ViewController: UIViewController {
     
     let animDuration: CFTimeInterval = 1
     
+    func animate(color:Color) {
+        bgColorAnimateTo(color)
+        cmykRingsAnimTo(color)
+        rgbLabelsAnimTo(color)
+        nameLabelAlphaAnim(color)
+    }
+    
     func bgColorAnimateTo(color: Color) {
         let newBgColor = UIColor(red: CGFloat(color.getR())/255.0, green: CGFloat(color.getG())/255.0, blue: CGFloat(color.getB())/255.0, alpha: 1.0).CGColor
         
@@ -71,6 +78,10 @@ class ViewController: UIViewController {
         gLabel.animTo(color.getG(), withDuration: animDuration)
         bLabel.animTo(color.getB(), withDuration: animDuration)
     }
+    
+    func nameLabelAlphaAnim(color:Color) {
+        nameLabel.updateName(nameEN: color.nameEN, nameJA: color.nameJA, animate: true, withDuration: animDuration)
+    }
 }
 
 extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -87,11 +98,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let color = colors[indexPath.row]
-        
-        bgColorAnimateTo(color)
-        cmykRingsAnimTo(color)
-        rgbLabelsAnimTo(color)
-        nameLabel.updateName(nameEN: color.nameEN, nameJA: color.nameJA)
+        animate(color)
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
